@@ -8,6 +8,7 @@ module.exports={
     output:  {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
+        publicPath: '/'
     },
     stats: {
 children:true
@@ -33,7 +34,7 @@ children:true
         ]
         },
         {
-            test: /\.s[ac]ss$/i,
+            test: /\.(css|scss)$/i,
             use: [
                 "style-loader",
                 "css-loader",
@@ -56,6 +57,7 @@ children:true
         static :{
             directory: path.join(__dirname, 'public'),
         },
+        
         compress: true,
         port: 3005,
         /*contentBase: path.join(__dirname, 'dist'),
