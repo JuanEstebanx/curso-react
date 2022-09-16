@@ -57,10 +57,10 @@ children:true
         static :{
             directory: path.join(__dirname, 'public'),
         },
-        
+        //historyAppiFallback: true,
         compress: true,
         port: 3005,
         /*contentBase: path.join(__dirname, 'dist'),
         port: 3000,*/
-          }
-}
+          },
+};

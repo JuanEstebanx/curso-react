@@ -10,19 +10,32 @@ import '../styles/global.css';
 const App = () => {
     return (
         <BrowserRouter>
-            <Routes>
-                <Layout>
+            <Layout>
+                <Routes>
+                    <Route  path="/" element={<Home />} />
+                    <Route  path="/login" element={<Login />} />		
+                    <Route  path="/recovery-password" element={<RecoveryPassword />} />
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
+            </Layout>
+            
+        </BrowserRouter>
+
+
+        /*<BrowserRouter>
+            <Layout>
+                <Routes>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/login" component={Login} />
                     <Route exact path="recovery-password" component={RecoveryPassword} />
                     <Route component={NotFound} />
-                </Layout>
-            </Routes>
+                </Routes>
+            </Layout>
             <Layout>
                 <Login></Login>
                 <RecoveryPassword></RecoveryPassword>
             </Layout>
-        </BrowserRouter>
+        </BrowserRouter>*/
 
     );
 }
