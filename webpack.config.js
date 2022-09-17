@@ -10,6 +10,9 @@ module.exports={
         filename: 'bundle.js',
         publicPath: '/'
     },
+    devServer : {
+        historyApiFallback: true
+    },
     stats: {
 children:true
     },
@@ -53,14 +56,14 @@ children:true
             filename: '[name].css'
         }),
     ],
-    devServer:{
+    /*devServer:{
         static :{
             directory: path.join(__dirname, 'public'),
         },
         //historyAppiFallback: true,
         compress: true,
-        port: 3005,
+        port: 3006,
         /*contentBase: path.join(__dirname, 'dist'),
         port: 3000,*/
-          },
+          /*},*/
 };
