@@ -3,10 +3,16 @@
 import React from 'react';
 import App from './routes/App';
 import {createRoot} from 'react-dom/client';
+import { TaskCard } from './components/TaskCard';
 const container = document.getElementById('app');
 const root = createRoot(container);
 
-root.render(<App tab="home" />); 
+root.render(
+<>
+<App />
+{/* <TaskCard ready="{true}"/> */}
+</>
+); 
 
 
 

@@ -9,3 +9,8 @@ const Home = () => {
 }
 
 export default Home;
+
+/*
+Acá se dividen las páginas ya hay algunas variantes a tener persentes, component principall toma el nombre del componen el className heredad
+el const Home principal, nombre del componente. 
+*/
